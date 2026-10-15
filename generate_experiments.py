@@ -91,3 +91,4 @@ if __name__ == "__main__":
         exp_path = create_new_experiment_dir()
         write_hpcg_dat(exp["local_n"], exp["run_time"], exp_path)
         write_slurm_script(exp["nodes"], exp["ntasks"], exp["nthreads"], exp["time"], exp["build_id"], exp_path)
+        write_config(exp, exp_path)
